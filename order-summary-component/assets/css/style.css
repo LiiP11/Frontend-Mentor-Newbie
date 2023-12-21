@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+	/* Color palette */
+	/* primary */
+	--clr0:#e0e8ff;
+	--clr1:#3829e0;
+
+	/* neutral */
+	--clr2:#f5f7ff;
+	--clr3:#7280a7;
+	--clr4:#1f2f56;
+}
+
+/* General */
+*, ::before, ::after {
+	box-sizing: border-box;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+}
+
+body {
+	background: url(../images/pattern-background-mobile.svg) no-repeat top/contain;
+	display: flex;
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+}
+
+/* Main */
+.container {
+	background-color: var(--clr2);
+	border-radius: 1em;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+	margin: auto;
+	max-width: 21em;
+	overflow: hidden;
+}
+
+.container img {
+	width: 100%;
+}
+
+/* Content */
+.content {
+	margin: auto;
+	max-width: 80%;
+}
+
+.content h3 {
+	color: var(--clr4);
+	font-size: 1.5em;
+	font-weight: 900;
+	padding: 1em 0;
+	text-align: center;
+}
+
+.content p {
+	color: var(--clr3);
+	text-align: center;
+}
+
+/* Mid */
+.mid {
+	align-items: center;
+	display: flex;
+	font-size: 14px;
+	justify-content: space-between;
+	margin: 2em 0;
+	padding: 1em 0;
+}
+
+.mid img {
+	width: 3em;
+}
+
+.mid div {
+    font-size: 1.2em;
+}
+
+.mid h4 {
+	color: var(--clr4);
+	font-weight: 900;
+}
+
+.mid p {
+	font-size: .8em;
+}
+
+.mid span a {
+	font-weight: 900;
+}
+
+.mid span a:hover {
+	color: #7463da;
+	text-decoration: none;
+}
+
+/* Buttons */
+.btns button {
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: 900;
+	transition: all .2s ease-in-out;
+	width: 100%;
+}
+
+.btn01 {
+	background-color: var(--clr1);
+	border: none;
+	padding: 1em 0;
+}
+
+.btn01:hover {
+	background-color: #7463da;
+}
+
+.btn01 a {
+	color: var(--clr2);
+	text-decoration: none;
+}
+
+.btn02 {
+	background-color: var(--clr2);
+	border: 1px solid var(--clr0);
+	margin-bottom: 2em;
+	margin-top: 1em;
+	padding: 1em;
+}
+
+.btn02 a {
+	color: var(--clr3);
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+}
+
+.btn02:hover a {
+	color: var(--clr4);
+}
+
+/* Desktops */
+@media screen and (min-width: 992px) {
+	body {
+		background: url(../images/pattern-background-desktop.svg) no-repeat top/contain;
+	}
+}
