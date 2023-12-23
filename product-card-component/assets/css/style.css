@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+:root {
+	/* Color palette */
+	/* primary */
+	--clr0:#3c8067;
+	--clr1:#f2ebe3;
+
+	/* neutral */
+	--clr2:#1c232b;
+	--clr3:#6c7289;
+	--clr4:#ffffff;
+}
+
+/* General */
+*, ::before, ::after {
+	box-sizing: border-box;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--clr1);
+	display: flex;
+	font-family: 'Fraunces', serif;
+	height: 100vh;
+}
+
+.container > *,
+section > * {
+	flex: 1 1 100%;
+}
+
+/* Container */
+.container {
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+    max-width: 25em;
+	overflow: hidden;
+}
+
+/* Section01 */
+.main01 img {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+/* Section02 */
+.main02 {
+	background-color: var(--clr4);
+}
+
+.main02 h3, .main-txt, .off-price {
+	font-size: 14px;
+}
+
+.main02 .content {
+	margin: auto;
+	max-width: 74%;
+}
+
+.main02 h3 {
+	color: var(--clr3);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	letter-spacing: 6px;
+	margin-top: 2em;
+}
+
+.main02 h2 {
+	color: var(--clr2);
+	font-size: 2em;
+	line-height: 1em;
+	margin-top: .5em;
+}
+
+.main02 .main-txt {
+	color: var(--clr3);
+	font-family: 'Montserrat', sans-serif;
+	line-height: 2em;
+	padding: 1.5em 0;
+}
+
+.main02 .pricetag {
+	align-items: center;
+	display: flex;
+}
+
+.main02 .price {
+	color: var(--clr0);
+	font-size: 2.2em;
+	margin-right: .5em;
+}
+
+.main02 .off-price {
+	color: var(--clr3);
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: line-through;
+}
+
+/* Button */
+button {
+	background-color: var(--clr0);
+	border: none;
+	border-radius: 10px;
+	color: var(--clr4);
+	display: flex;
+	font-size: 1em;
+	font-weight: 700;
+	justify-content: center;
+	margin: 1em 0 2em;
+	padding: 1em 0;
+	text-align: center;
+	transition: all .2s ease-in-out;
+	width: 100%;
+}
+
+button:hover {
+	background-color: var(--clr2);
+	cursor: pointer;
+}
+
+button img {
+	margin-right: 10px;
+}
+
+/* Desktops */
+@media screen and (min-width: 992px) {
+	.container {
+		flex-wrap: nowrap;
+		max-width: 40em;
+	}
+
+	/* Section01 */
+	.main01 {
+		background: url(../images/image-product-desktop.jpg) no-repeat center/cover;
+	}
+
+	.main01 img {
+		display: none;
+	}
+}
