@@ -1,4 +1,5 @@
 # Frontend Mentor
+![frontend-mentor](https://github.com/LiiP11/Frontend-Mentor-Newbie/assets/104656777/577fc4e9-a10d-4c64-af82-a5d6cb55d95e)
 ## Frontend Mentor Challenge
 This is a solution to Frontend Mentor challenges that helps you improve your coding skills by building realistic projects. 
 
@@ -10,9 +11,6 @@ This is a solution to Frontend Mentor challenges that helps you improve your cod
 ## Technologies Used
 - HTML
 - CSS
-
-## Acknowledgments
-Special thanks to [Frontend Mentor](https://www.frontendmentor.io/) for providing the project requirements and guidance.
 
 ## Contact
 If you have any questions or need help with the exercises, feel free to get in touch.
